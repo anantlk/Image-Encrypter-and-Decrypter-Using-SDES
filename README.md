@@ -3,7 +3,7 @@
 1.Go to the terminal
 
 
-2.Change this directory to your current working directory
+2.Change this directory as your current working directory
 
 
 3.Run Command:
