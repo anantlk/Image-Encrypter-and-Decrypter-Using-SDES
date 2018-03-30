@@ -1,0 +1,6 @@
+#Remove geany bat file
+.bat
+#remove compiled py file
+.py
+#remove .env file
+.env
