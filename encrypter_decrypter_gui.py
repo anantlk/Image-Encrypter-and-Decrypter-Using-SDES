@@ -9,9 +9,7 @@
 
 import wx
 import wx.xrc
-
-actual_path='';
-
+import image
 
 def findAllOccurences(ch,path):
 	return [i for i,letter in enumerate(path) if letter==ch]
@@ -66,15 +64,13 @@ class MainFrame ( wx.Frame ):
 	
 	# Virtual event handlers, overide them in your derived class
 	def encryption( self, event ):
-		try:
-			path=self.file_path.GetPath();
-			pos_arr=findAllOccurences("\\",path)
-			path=list(path)
-			for i in range(len(pos_arr)):
-				path.insert(pos_arr[i]+i,"\\")
-			print("".join(path))
-		except Exception:
-			print("Error in Encryption")
+		path=self.file_path.GetPath();
+		pos_arr=findAllOccurences("\\",path)
+		path=list(path)
+		for i in range(len(pos_arr)):
+			path.insert(pos_arr[i]+i,"\\")
+		path="".join(path)
+		image.encrypt_image(path)
 	
 	def decryption( self, event ):
 		try:		
@@ -83,7 +79,8 @@ class MainFrame ( wx.Frame ):
 			path=list(path)
 			for i in range(len(pos_arr)):
 				path.insert(pos_arr[i]+i,"\\")
-			print("".join(path))
+			path="".join(path)
+			image.decrypt_image(path)
 		except Exception:
 			print("Error in Decryption");
 	
