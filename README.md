@@ -1,5 +1,10 @@
 # Image-Encrypter-and-Decrypter-Using-SDES
 
+## Deacription
+Encrypts the given as input and keeps your image data secure.Decrypts the encrypted image and provides with original image in fraction of seconda.
+
+## Usage
+
 1.Go to the terminal
 
 
