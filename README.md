@@ -5,7 +5,7 @@ Encrypts the given image as input and keeps your image data secure.Decrypts the 
 
 ## Usage
 
-1.Go to the terminal
+1.Open the terminal
 
 
 2.Change this directory as your current working directory
